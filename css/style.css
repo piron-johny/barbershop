@@ -4,12 +4,22 @@
 
   --primaryText:#303030;
   --secondaryText:#9DA4BD;
+  --primaryTextLighten: #555555;
 }
 
 
 body {
   font-family: "Open Sans", sans-serif;
 }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
 
 .section-title {
   color: var(--primaryText);
@@ -17,4 +27,81 @@ body {
   font-family: Releway;
   font-family: 700px;
   font-size: 42px;
+}
+
+
+/* Навигация */
+.nav {
+  outline: 1px solid #FF6C00; /* удалить */
+  background: #818181;
+}
+.contacts {
+  display: inline-block;
+}
+.nav__list {
+  display: inline-block;
+}
+.nav__list li {
+  display: inline-block;
+}
+.nav__link {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #fff;
+}
+.nav__link:hover,
+.social-box__link:hover {
+  color: var(--primaryColor);
+}
+
+/* Слайдер */
+.slider__subtitle {
+  color: var(--primaryTextLighten);
+}
+.slider__suptitle, .slider__subtitle {
+  color: var(--secondaryText);
+
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 15px;
+}
+.slider__subtitle {
+  color: var(--secondaryColor);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* Сайтбар */
+.social-box__link {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 15px;
+  color: var(--primaryText);
+}
+.btn-primary {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  border: 1px solid var(--primaryColor);
+  border-radius: 25px;
+  letter-spacing: 0.09em;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+/* Прайс */
+.price__list {
+  display: inline-block;
+}
+.price__item p, .price__item span {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 57px;
+  text-align: center;
+  color: var(--primaryText);
 }
