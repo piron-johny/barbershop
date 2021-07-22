@@ -4,7 +4,7 @@
 
   --primaryText:#303030;
   --secondaryText:#9DA4BD;
-  --primaryTextLighten: #555555;
+  --primaryTextLighten: #9da4bd99;
 }
 
 
@@ -21,7 +21,7 @@ a {
 }
 
 
-.section-title {
+.title {
   color: var(--primaryText);
 
   font-family: Releway;
@@ -56,18 +56,15 @@ a {
 }
 
 /* Слайдер */
-.slider__subtitle {
+.suptitle {
   color: var(--primaryTextLighten);
-}
-.slider__suptitle, .slider__subtitle {
-  color: var(--secondaryText);
 
   font-size: 11px;
   font-weight: 600;
   line-height: 15px;
 }
-.slider__subtitle {
-  color: var(--secondaryColor);
+.subtitle {
+  color: var(--primaryText);
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
