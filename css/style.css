@@ -36,12 +36,18 @@ p {
 }
 section {
   padding-top: 130px;
+  padding-bottom: 130px;
 }
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+.title.title-dark {
+  color: var(--primaryText);
+  font-size: 42px;
+  line-height: 49px;
 }
 
 /* Navigation */
@@ -143,33 +149,31 @@ section {
   display: flex;
 }
 .about__images {
+  width: 570px;
   display: flex;
+  justify-content: space-between;
 }
 .about__content {
   width: 500px;
   margin-left: 64px;
 }
-.about .title {
-  color: var(--primaryText);
-  font-size: 42px;
-  line-height: 49px;
-}
 .about .subtitle {
   color: var(--primaryTextLighten);
+  margin-bottom: 20px;
 }
 .about p {
   color: var(--primaryTextLighten);
   font-size: 14px;
   line-height: 26px;
-  margin-bottom: 20px;
+  margin-bottom: 52px;
 }
 
 /* Price */
+.price {
+  background-color: #2e2c2c;
+}
 .price .suptitle {
   color: rgba(157, 164, 189, 0.6);
-}
-.price .title {
-  color: #fff;
 }
 .price__list {
   display: inline-block;
@@ -184,6 +188,16 @@ section {
 
 
 /* Old-scool */
+.advantages {
+  width: 370px;
+  height: 405px;
+}
+.advantages__item {
+  width: 170px;
+  height: 133px;
+  background-color: #F7F7F7;
+  display: inline-block;
+}
 .advantages__item p {
   font-weight: 700;
   font-size: 42px;
@@ -194,21 +208,46 @@ section {
   font-size: 11px;
   line-height: 15px;
 }
-.old-scool .title {
-  color: var(--primaryText);
-  font-size: 42px;
-  line-height: 49px;
-}
 .old-scool .subtitle {
   color: var(--primaryTextLighten);
+}
+.old-scool .container {
+  display: flex;
 }
 
 
 /* Masters */
-.masters .title {
-  color: var(--primaryText);
+.masters .list {
+  display: flex;
+  justify-content: space-between;
 }
-.masters .items {
+.list .item {
+  text-align: center;
+}
+.item img {
+  margin-bottom: 30px;
+}
+.list h3 {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.item p {
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: var(--primaryColor);
+  margin-bottom: 30px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+
+/*  Gallery */
+.gallery .items {
   display: flex;
   justify-content: space-between;
 }
