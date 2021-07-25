@@ -7,9 +7,16 @@
   --primaryTextLighten: #555555;
 }
 
-
+* {
+  box-sizing: border-box;
+}
+*:after,
+*::before {
+  box-sizing: border-box;
+}
 body {
   font-family: "Open Sans", sans-serif;
+  margin: 0;
 }
 ul {
   list-style: none;
@@ -38,27 +45,41 @@ section {
   padding-top: 130px;
   padding-bottom: 130px;
 }
-.container {
-  width: 1200px;
+/* .container {
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-}
+} */
 .title.title-dark {
   color: var(--primaryText);
   font-size: 42px;
   line-height: 49px;
 }
-
+/* Header */
+.header {
+  width: 100%;
+  height: 100vh;
+}
+.header .container {
+  display: flex;
+}
 /* Navigation */
 .nav {
-  outline: 1px solid #FF6C00; /* удалить */
-  background: #818181;
   display: flex;
   align-items: center;
+  padding-top: 32px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0 55px;
+}
+.nav img {
+  margin-right: 32px;
 }
 .nav__list {
   display: flex;
+  padding-left: 40px;
 }
 .nav__link {
   font-size: 12px;
@@ -89,6 +110,11 @@ section {
 
 
 /* Sitebar */
+.sitebar{
+  width: 155px;
+  height: 100vh;
+  background-color: #d8c1c1;
+}
 .social-box__link {
   font-size: 11px;
   font-weight: 600;
@@ -105,7 +131,6 @@ section {
   border-radius: 25px;
   letter-spacing: 0.09em;
   color: #fff;
-  box-sizing: border-box;
 }
 .btn-dark {
   color: var(--primaryText);
@@ -113,7 +138,12 @@ section {
 
 /* Slider */
 .slider {
-  background-color: #d2dbfa; /* удалить*/
+  width: 100%;
+}
+.slider__item {
+  width: calc(100% - 155px);
+  height: 100vh;
+  background-image: url(../img/slider/03.jpg);
 }
 .suptitle {
   color: var(--primaryText);
@@ -175,15 +205,27 @@ section {
 .price .suptitle {
   color: rgba(157, 164, 189, 0.6);
 }
+.price__box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 .price__list {
-  display: inline-block;
+  width: 50%;
+  padding: 30px 40px;
+}
+.price__item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .price__item p, .price__item span {
-  display: inline-block;
   font-size: 18px;
   line-height: 30px;
-  text-align: center;
   color: var(--secondaryText);
+}
+.price__box a {
+  display: inline-block;
 }
 
 
